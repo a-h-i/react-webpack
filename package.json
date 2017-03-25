@@ -1,0 +1,43 @@
+{
+  "name": "react_webpack_template",
+  "version": "1.0.0",
+  "description": "My personal template for react webpack applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack -p --colors --progress",
+    "dev": "webpack-dev-server --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ah450/rect_webpack.git"
+  },
+  "keywords": [
+    "template",
+    "react",
+    "webpack"
+  ],
+  "author": "Ahmed H. Ismail (ahm3d.hisham@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ah450/rect_webpack/issues"
+  },
+  "homepage": "https://github.com/ah450/rect_webpack#readme",
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "node-sass": "^4.5.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.0",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

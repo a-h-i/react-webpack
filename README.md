@@ -10,3 +10,5 @@ Of course as I develop additional react projects, the build system will grow to 
 Note that this isn't a generator nor meant to be cloned as a starting point. 
 More like a reference, copy the config files, install the packages (with updated version don't just copy paste package.json so that npm can install latest version) and so forth.
 
+
+Check package.json for scripts.
