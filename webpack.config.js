@@ -33,7 +33,12 @@ let conf = {
       {
         test: /\.jsx?$/,
         exclude: [/node_modules/],
-        use: ['react-hot-loader/webpack', 'babel-loader']
+        use: ['react-hot-loader/webpack', 'babel-loader', {
+          loader: 'eslint-loader',
+          options: {
+            emitWarning: true
+          }
+        }]
       },
       {
         test: /\.(sass|scss)$/,
@@ -51,6 +56,10 @@ let conf = {
     ],
   },
   devServer: {
+    overlay: {
+      errors: true,
+      warnings: true,
+    },
     compress: true,
     proxy: {
       '/api': {
@@ -84,7 +93,19 @@ let conf = {
       inject: 'body'
     }),
     new SystemBellPlugin(),
-    new DashboardPlugin()
+    new DashboardPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        eslint: {
+          // Fail only on errors
+          failOnWarning: false,
+          failOnError: false,
+
+          // Toggle autofix
+          fix: false,
+        },
+      },
+    })
   ]
 };
 
