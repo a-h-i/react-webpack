@@ -1,0 +1,15 @@
+@import 'stylesheets/reset';
+
+
+.center-pseudo {
+  display: inline-block;
+  text-align: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+  }
+}
+

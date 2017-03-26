@@ -12,3 +12,13 @@ More like a reference, copy the config files, install the packages (with updated
 
 
 Check package.json for scripts.
+
+
+Includes Libraries:
+===================
+
+- React
+- ReactDOM
+- [include media](https://www.npmjs.com/package/include-media) `import '~include-media/dist/include-media.scss';`
+- [material design colors](https://github.com/mrmlnc/material-color) `import '~material-design-color/material-color.scss;`
+
