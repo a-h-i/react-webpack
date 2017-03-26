@@ -1,8 +1,7 @@
-import {Hello} from './hello.jsx';
-import {World} from './world.jsx';
+import {Hello} from './hello';
+import {World} from './world';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 
 
 function bootstrap() {

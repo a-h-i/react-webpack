@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack -p --colors --progress",
-    "dev": "webpack-dev-server --colors --progress"
+    "build": "NODE_ENV=production webpack -p --colors --progress",
+    "dev": "NODE_ENV=development webpack-dev-server --colors --progress"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/ah450/rect_webpack#readme",
   "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-class-properties": "^6.23.0",
@@ -33,8 +37,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.24.0",
     "node-sass": "^4.5.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.0",
     "webpack": "^2.3.2",
