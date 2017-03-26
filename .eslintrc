@@ -1,13 +1,14 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react"
+    "react",
+    "promise"
   ],
   "rules": {
     "max-len": [1, 120, 2, {"ignoreComments": true}],
     "react/prop-types": [2]
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended",  "plugin:promise/recommended", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
