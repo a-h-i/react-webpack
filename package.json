@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "NODE_ENV=production webpack -p --colors --progress",
-    "dev": "NODE_ENV=development webpack-dev-server --colors --progress"
+    "dev": "NODE_ENV=development nodemon --watch webpack.config.js --exec \"webpack-dev-server --colors --progress\""
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.24.0",
     "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.0",
