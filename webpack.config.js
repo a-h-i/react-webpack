@@ -12,7 +12,8 @@ const apiPortEnv = process.env.API_PORT_WEBPACK || '3000'
 const apiPort = parseInt(apiPortEnv);
 const webpackDevPortEnv = process.env.WEBPACK_DEV_PORT || '9000';
 const webpackDevPort = parseInt(webpackDevPortEnv);
-
+const PurifyCSSPlugin = require('purifycss-webpack');
+const glob = require('glob');
 
 
 // 0.0.0.0 for external connections/all interfaces.
@@ -129,7 +130,10 @@ let conf = {
         },
       },
     }),
-    extractSass
+    extractSass,
+    new PurifyCSSPlugin({
+      paths: glob.sync(path.join(__dirname, 'src/**/*'))
+    })
   ]
 };
 

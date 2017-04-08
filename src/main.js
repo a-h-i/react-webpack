@@ -1,6 +1,6 @@
+import './main.scss';
 import {Hello} from './hello';
 import {World} from './world';
-import './main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
